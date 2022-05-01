@@ -77,7 +77,8 @@ header{
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 130px;
+	height: 130px;	text-decoration: none!important;
+
 	z-index: 99;
 	background-color: #41c17d;
 	background-image: -moz-linear-gradient(bottom, #248888 0%, #248888 0.27%, #40c27d 99.46%, #40c27d 100%);
@@ -104,12 +105,19 @@ header .logo{
 	margin: 45px 100px 0 0;
 }
 
-header .logo img{
+header .logo {
 	width: 200px;
 	border-radius: 5px 20px 5px;
 	box-shadow: 0 8px 6px -6px black;
 }
 
+
+.logo > img{
+	width: 100%;
+	border-radius: 5px 20px 5px;
+	box-shadow: 0 8px 6px -6px black;	
+
+}
 header .burger_icon{
 	display: none;
 	float: right;
@@ -200,7 +208,7 @@ header .social li:first-child{
 	position: relative;
 	height: 560px;
 	background: url('../img/tennMap.png') no-repeat  center center;
-	background-size: cover;
+	background-size: 100%;
 }
 
 .hero .caption{
@@ -756,6 +764,8 @@ a.app_link{
 /*		Footer 		*/
 
 footer{
+	display: flex;
+	justify-content: center;
 	padding: 100px 0;
 	text-align: center;
 }
